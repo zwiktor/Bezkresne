@@ -1,0 +1,183 @@
+/*calc(8px + 1.5625vw)*/
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+:root {
+    --primary-color: #064b3c;
+    --secondary-color:#f3eed8;
+
+}
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.05)), url(../img/teren.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.hero nav{
+    /*background:var(--secondary-color);*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    line-height: 60px;
+}
+
+.hero .navbar-menu{
+    justify-content: space-between;
+    transition: .6s all;
+}
+
+.navbar-menu-fixed {
+    position: fixed;
+    transition: .6s all;
+}
+
+.nav-active {
+    background-color:var(--secondary-color);
+    box-shadow: 5px -1px 12px -5px grey;
+    transition: .3s;
+}
+
+.hero .nav-active * {
+    color:var(--primary-color) ;
+}
+
+.hero .nav-active a:hover {
+    color:white ;
+}
+
+.hero .nav-logo {
+    color: var(--primary-color);
+    font-size:32px;
+}
+
+.hero ul li {
+    display:inline-block;
+    padding:0 20px;
+}
+
+.hero ul li a{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.hero ul li a:active, .hero ul li a:hover{
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+.active {
+    border-bottom: solid 4px var(--primary-color);
+}
+
+#checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+@media (max-width: 858px) {
+    #checkbtn{
+        display: block;
+    }
+    #checkbtn i {
+        vertical-align: center;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero nav {
+        padding: 10px 6%;
+    }
+
+    .hero ul{
+        position:fixed ;
+        width: 80%;
+        /*height: 100vh;*/
+        /*background-color: rgb(248, 242, 238);*/
+        background-color: var(--primary-color);
+        top: 25%;
+        left: -100%;
+        margin: auto;
+        text-align: center;
+        transition: all .5s;
+        border-radius: 20px;
+        box-shadow:
+          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12);
+        border: solid 2px var(--secondary-color);
+    }
+    .hero .toggler {
+        left: 10%;
+        top: 25%;
+    }
+    .hero ul li {
+        display: block;
+        margin: 30px;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .hero ul li a{
+        display: block;
+        padding: 20px 20px;
+        font-size: 20px;
+        color:  var(--primary-color);
+        border: solid 1px var(--primary-color);
+        border-radius: 10px;
+        box-shadow: 1px 2px 14px 1px grey;
+        background: var(--secondary-color);
+    }
+    .hero ul li a:active, .hero ul li a:hover{
+        color: var(--primary-color);
+    }
+
+
+}
+
+.content {
+    height: 2000px;
+}

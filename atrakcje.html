@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Bezkresne</title>
+  <meta name="description" content="Bezkresne">
+  <meta name="author" content="Wiktor Zachar">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./static/css/styles.css">
+  <script src="https://kit.fontawesome.com/eec63da8a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="hero">
+    <nav aria-label="primary menu" class="navbar-menu" id="navbar-id">
+      <h1 class="nav-logo">Bezkresne</h1>
+      <ul id="nav-section">
+        <li>
+          <a href="./index.html">Strone główna</a>
+        </li>
+        <li>
+          <a href="./oferta.html">Oferta</a>
+        </li>
+        <li>
+          <a href="./atrakcje.html" class="active">Akrakcje w okolicy</a>
+        </li>
+        <li>
+          <a href="./kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+      <label id="checkbtn" onclick="toggle()">
+        <i class="fas fa-bars" id="hamburger"></i>
+      </label>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div class="home_starter reveal">
+      <h1 class="cursive_text">Okolica</h1>
+      <h3>Malownicza, spokojna Suwalszczyzna</h3>
+      <hr>
+      <p>Stąd krótkim i zapierającym dech w piersi spacerem udasz się nad pobliskie jeziora, zaledwie w kilkanaście do kilkudziesięciu minut dotrzesz do słynnych mostów w Stańczykach, wybierzesz się na wyprawę kolejką wąskotorową przez sam środek rezerwatu, udasz się na spływ kajakowy Hańczą czy zwiedzisz wspaniały, stary młyn w Turtulu. Znajdują się tu liczne szlaki pieszo- rowerowe, w tym wschodni szlak Green Velo.</p>
+    </div>
+    <div class="slider">
+      <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./static/img/home_section_1.jpg" style="width:100%">
+        <div class="text">Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./static/img/home_section_1.jpg" style="width:100%">
+        <div class="text">Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./static/img/home_section_1.jpg" style="width:100%">
+        <div class="text">Text</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </div>
+
+    <div class="atrakcje-lista-header">
+      <h1>Atrakcje w okolicy</h1>
+      <hr>
+    </div>
+
+
+    <div class="atrakcje-flex-container">
+      <div class="atrakcje-flex-1 reveal">
+        <p>Jeziora w najbliższej okolicy</p>
+        <p>Kompleks sportowy w Szelmencie</p>
+        <p>Mosty w Stańczykach</p>
+        <p>Spływy Czarną Hańczą</p>
+        <p>Kuchnia Suwalsko-Litweska</p>
+      </div>
+      <div class="atrakcje-flex-2 reveal">
+        <p>Stary Młyn w Turtulu</p>
+        <p>Zagroda Litewska w Puńsku </p>
+        <p>Wigierska Kolejka Wąskotorowa</p>
+        <p>Punkty widokowe</p>
+        <p>Trasy pieszo-rowerowe</p>
+      </div>
+    </div>
+
+    <a class="home_section_button atrakcje-button" type="button" href="./index.html">Dowiedz się
+      więcej >>> </a>
+
+  </div>
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer_opis">
+      <h2 class="cursive_text">Gospodarze</h2>
+      <hr>
+      <p>Warszawsko-suwalska miłość. Kapka lokalnego folkloru i mieszczańskie marzenie o ucieczce
+        w Bezkresne. Nietuzinkowa mieszanka luzu i temperamentu. Jej zmysł do dbałości o
+        szczegóły, Jego fach i rzemiosło. Jej miłość do zarządzania, Jego ręka do pracy. Nina i
+        Łukasz - para gospodarzy, która ugości Was w swoich domach i wprowadzi w niepowtarzalny
+        klimat Suwalszczyzny z małym sznytem nowoczesnego komfortu. Wnętrza naszych domów w
+        pełni oddają pasje gospodarzy – drewniane wykończenia spod ręki Łukasza czy starannie
+        wyselekcjonowane przez Ninę dekoracje i elementy architektoniczne tworzą niepowtarzalny
+        klimat, budowany z sercem i troską o Wasz komfort.</p>
+        <div class="fotter_social_media">
+          <h4>Znajdź nas na:</h4>
+          <a href="#"><img src="./static/img/facebook-app-icon.webp" class="icons"></img></a>
+          <a href="#"><img src="./static/img/ig-instagram-icon.webp" class="icons"></img></a>
+          <a href="#"><img src="./static/img/pinterest-icon.webp" class="icons"></img></a>
+        </div>
+    </div>
+    <div class="footer_img">
+      <img src="./static/img/home_section_1.jpg">
+    </div>
+
+
+  </footer>
+  <div class="footer_last">
+    <h2>Bezkresne</h2>
+    <ul>
+      <li><a href="#">Regulamin</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">polityka prywatności</a></li>
+    </ul>
+    <h4>realizacja: Wiktor Zachar</h4>
+  </div>
+
+  <script src="./static/js/scripts.js"></script>
+  <script src="./static/js/slider.js"></script>
+
+</body>
+</html>
